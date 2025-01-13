@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Server.js",
+    "dev": "nodemon Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@project-serum/serum": "^0.13.65",
+    "@pythnetwork/client": "^2.22.0",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "ccxt": "^4.4.47",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cache": "^5.1.2"
+  }
+}
