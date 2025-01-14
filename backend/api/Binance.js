@@ -6,11 +6,7 @@ const fetchBinancePrices = async () => {
     try {
         const response = await axios.get(BINANCE_API_URL);
         const data = response.data;
-
-        // Filter USDC pairs
         const usdcPairs = data.filter((pair) => pair.symbol.endsWith("USDC"));
-
-        // Return pair name and price
         return usdcPairs.map((pair) => ({
             pair: pair.symbol,
             price: parseFloat(pair.price),

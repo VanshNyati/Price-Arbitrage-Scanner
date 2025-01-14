@@ -1,7 +1,6 @@
 const fetchSolanaPrices = async () => {
     try {
         console.log("Using mock data for Solana prices.");
-        // Mock data for USDC trading pairs
         const mockPrices = [
             { pair: "BTC/USDC", price: 49000 },
             { pair: "ETH/USDC", price: 3300 },

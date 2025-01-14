@@ -3,7 +3,7 @@ const { getTokens, calculateArbitrage } = require("../controllers/TokenControlle
 
 const router = express.Router();
 
-router.get("/tokens", getTokens);
-router.get("/arbitrage", calculateArbitrage);
+router.get("/tokens", getTokens); 
+router.get("/arbitrage", calculateArbitrage); 
 
 module.exports = router;
