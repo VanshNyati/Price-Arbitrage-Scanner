@@ -12,7 +12,7 @@ const fetchBinancePrices = async () => {
             price: parseFloat(pair.price),
         }));
     } catch (error) {
-        console.error("Error fetching Binance prices:", error);
+        console.error("Error fetching Binance prices:", error.message);
         throw error;
     }
 };

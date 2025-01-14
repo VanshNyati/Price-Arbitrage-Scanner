@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 import TokenPrices from "./pages/TokenPrices";
 import Arbitrage from "./pages/Arbitrage";
+import DataVisualization from "./pages/DataVisualization";
+import Prediction from "./pages/Prediction";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -14,10 +16,12 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/token-prices" element={<TokenPrices />} />
           <Route path="/arbitrage" element={<Arbitrage />} />
+          <Route path="/data-visualization" element={<DataVisualization />} />
+          <Route path="/prediction" element={<Prediction />} />
         </Routes>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
